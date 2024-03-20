@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Viewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+    <video width="640" height="400" controls="controls" src="hsl-URL/playlist.m3u8" control="control"> </video><script type="text/javascript">
+        jwplayer('mediaplayer').setup({
+          'id': 'playerID',
+          'width': '480',
+          'height': '270',
+          'provider': 'rtmp',
+          'streamer': 'rtmp://server.dsttamal.me:1935/stream1',
+          'file': 'mp4:bigbuckbunny_450.mp4',
+          'modes': [
+              {type: 'flash', src: 'player.swf'},
+          ]
+        });
+      </script>
+</body>
+</html>
